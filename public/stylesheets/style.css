@@ -1,0 +1,30 @@
+.item {
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+.menu {
+  margin-top: 10px;
+}
+.item-name {
+  margin: 0;
+  text-transform: capitalize;
+}
+.presence {
+  font-family: 'Merienda', cursive;
+  background: #f0f0f0;
+  font-size: 12px;
+  text-align: center;
+}
+.question {
+  margin-bottom: 40px;
+}
+.question h2 {
+  font-family: 'Gafata';
+  font-weight: normal;
+  color: #000;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-size: 29.5px;
+}
+.question:hover h2 {
+  color: #f55d5f;
+}

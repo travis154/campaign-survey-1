@@ -1,0 +1,49 @@
+a.btn.btn-link(href='#myModal', role='button', data-toggle='modal') New staff
+#myModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+	.modal-header
+		button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+		h3 Add new user
+	.modal-body
+		section.row
+			section
+			form.form-horizontal(action="/user/create")
+				section.control-group
+					label.control-label(for="name") Name:
+					section.controls
+						input(type="text", placeholder="Name...")#name
+				section.control-group
+					label.control-label(for="name") Department:
+					section.controls
+						select#department
+							option(value='') Select department...
+							option(value='IT') IT
+							option(value='Finance') Finance
+				section.control-group
+					label.control-label(for="name") Designation:
+					section.controls
+						input(type="text", placeholder="Designation...")#designation
+				section.control-group
+					label.control-label(for="name") Extension Number:
+					section.controls
+						input(type="text", placeholder="Extension number...")#ext
+				section.control-group
+					label.control-label(for="name") Phone Number:
+					section.controls
+						input(type="text", placeholder="Phone number...")#phone
+				section.control-group
+					label.control-label(for="name") Email:
+					section.controls
+						input(type="text", placeholder="Email address...")#email
+				section.control-group
+					label.control-label(for="name") Profile Image:
+					section.controls
+						input(type="file", placeholder="Profile image...")#pic
+				section.control-group
+					label.control-label(for="name") Admin user:
+					section.controls
+						input(type="checkbox")#admin
+	.modal-footer
+		button.btn#btnClose(data-dismiss='modal', aria-hidden='true') Close
+		button.btn.btn-primary#btnSave Save changes
+
+

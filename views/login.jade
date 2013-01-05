@@ -1,0 +1,18 @@
+		section.row
+			h3 Login form
+			form(method="post", action="/login")
+				section.control-group
+					label.control-label(for="inputIcon") Username:
+					section.controls
+						section.input-prepend
+							span.add-on
+								li.icon-user
+							input.span2#inputIcon(type="text", name="username")
+				section.control-group
+					label.control-label(for="inputIcon") Password:
+					section.controls
+						section.input-prepend
+							span.add-on
+								li.icon-lock
+							input.span2#inputIcon(type="password", name="userpass")
+				input.btn.btn-primary(type="submit", value="Login")

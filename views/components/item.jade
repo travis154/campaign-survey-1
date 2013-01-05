@@ -1,0 +1,30 @@
+section.listing.container
+	section.row.item
+		section.span5
+			section.media
+				section.pull-left
+					img.pro.staff-img(data-staff-id=staff_id, src='/files/' + staff_id + ".jpg" , hight="80", width="80", class='media-object')
+					div.presence=presence
+				section.media-body
+				section.media-heading
+					section
+						h4.item-name!=name
+					section
+						strong!=department
+					section
+						p!=title
+		section.span4
+			section
+				strong Extension : 
+				span!=work_phone_ext
+			section
+				strong Mobile :	 
+				span!=mobile_num
+			section
+				strong Email : 
+				a(href='mailto:'+work_email, target='_blank')!=work_email
+		section.span3
+			section
+				strong Facebook/profile
+			section
+				strong Tweet/profile
